@@ -56,6 +56,6 @@ function maccast_two_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function maccast_two_customize_preview_js() {
-	wp_enqueue_script( '_s-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), maccast_two_VERSION, true );
+	wp_enqueue_script( 'maccast-two-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), maccast_two_VERSION, true );
 }
 add_action( 'customize_preview_init', 'maccast_two_customize_preview_js' );

@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'maccast_two_woocommerce_setup' );
  * @return void
  */
 function maccast_two_woocommerce_scripts() {
-	wp_enqueue_style( '_s-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), maccast_two_VERSION );
+	wp_enqueue_style( 'maccast-two-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), maccast_two_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
@@ -57,7 +57,7 @@ function maccast_two_woocommerce_scripts() {
 			font-style: normal;
 		}';
 
-	wp_add_inline_style( '_s-woocommerce-style', $inline_font );
+	wp_add_inline_style( 'maccast-two-woocommerce-style', $inline_font );
 }
 add_action( 'wp_enqueue_scripts', 'maccast_two_woocommerce_scripts' );
 
