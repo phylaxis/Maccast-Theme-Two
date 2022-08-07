@@ -1,8 +1,8 @@
 <?php
 /**
- * _s Theme Customizer
+ * Maccast_Two Theme Customizer
  *
- * @package _s
+ * @package Maccast_Two
  */
 
 /**

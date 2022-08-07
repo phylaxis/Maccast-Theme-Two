@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package _s
+ * @package Maccast_Two
  */
 
 if ( ! function_exists( 'maccast_two_posted_on' ) ) :
